@@ -7,14 +7,32 @@ do
 	if ! [[ "$input" =~ "@" ]]; then
 		input="root@$input"
 	fi
-	tmux splitw -p 10 "ssh $input"
-	tmux selectp -l
+	# Add 10% panes with the SSH command
+	tmux split-window -p 10 "ssh $input"
+
+	# Select the original pane
+	tmux select-pane -l
 done
 if [[ $# -ne 0 ]]; then
-	tmux breakp
-	tmux swapw -t -1
-	tmux last-window
+	# Get current window ID
+	sshid=$(tmux display-message -p '#I')
+
+	# Break the source pane out from the SSH session
+	tmux break-pane
+
+	# Get the new id
+	srcid=$(tmux display-message -p '#I')
+
+	# Swap with the SSH sessions
+	tmux swap-window -t $sshid
+
+	# Go back to the SSH sessions (now at src)
+	tmux select-window -t $srcid
+
+	# Layout tiled (repressed output)
 	null=$(tmux select-layout tiled)
+
+	# Synchronize (repressed output)
 	null=$(tmux set-window-option synchronize-panes on)
 else
 	echo "Usage: $0 user@host <user@host> <user@host>...."
