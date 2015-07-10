@@ -1,0 +1,22 @@
+#!/bin/bash
+for input
+do
+	if [[ "$input" == "" ]]; then
+		break;
+	fi
+	if ! [[ "$input" =~ "@" ]]; then
+		input="root@$input"
+	fi
+	tmux splitw -p 10 "ssh $input"
+	tmux selectp -l
+done
+if [[ $# -ne 0 ]]; then
+	tmux breakp
+	tmux swapw -t -1
+	tmux last-window
+	null=$(tmux select-layout tiled)
+	null=$(tmux set-window-option synchronize-panes on)
+else
+	echo "Usage: $0 user@host <user@host> <user@host>...."
+	echo "If user is not supplied, root is assumed."
+fi

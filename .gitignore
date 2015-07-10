@@ -2,3 +2,5 @@
 !.tmux.conf
 !.gitignore
 !.conkyrc
+!bin
+!tcssh
