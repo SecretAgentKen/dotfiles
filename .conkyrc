@@ -3,13 +3,13 @@ own_window_type desktop
 own_window_transparent no
 own_window_argb_visual yes
 own_window_color 000000
-own_window_argb_value 150
+own_window_argb_value 0
 alignment bl
 background true
 gap_x 15
 gap_y 15
 use_xft yes
-xftfont Droid Sans Mono:size=20
+xftfont Noto Mono:size=20
 xftalpha .1
 update_interval 15.0
 uppercase yes
