@@ -4,9 +4,9 @@ do
 	if [[ "$input" == "" ]]; then
 		break;
 	fi
-	if ! [[ "$input" =~ "@" ]]; then
-		input="root@$input"
-	fi
+	#if ! [[ "$input" =~ "@" ]]; then
+	#	input="root@$input"
+	#fi
 	# Add 10% panes with the SSH command
 	tmux split-window -p 10 "ssh $input"
 
