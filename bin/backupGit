@@ -1,0 +1,14 @@
+#!/bin/bash
+BACKUPDST=~/Dropbox/GitBackup
+BACKUPSRC=~/work
+shopt -s extglob
+
+for D in ${BACKUPSRC}/*/; do
+	if [ -d "${D}/.git" ]; then
+		NAME=${D%%+(/)}
+		NAME=${NAME##*/}
+		echo "Bundling ${NAME}"
+		cd ${D} && git bundle create ${NAME}-backup.bundle master
+		mv ${D}/${NAME}-backup.bundle ${BACKUPDST}
+	fi
+done
