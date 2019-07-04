@@ -17,6 +17,12 @@ super + Escape
 super + l
 	xset dpms force off
 
+XF86Audio{Raise,Lower}Volume
+	amixer sset Master {1+,1-} unmute
+
+XF86AudioMute
+	amixer sset Master toggle
+
 #
 # bspwm hotkeys
 #
@@ -40,6 +46,10 @@ super + {t,shift + t,s,f}
 #
 # focus/swap
 #
+
+# swap biggest
+super + g
+	bspc node -s biggest.local
 
 # swap the node in the given direction
 super + {Left,Down,Up,Right}

@@ -5,6 +5,7 @@
 !bin
 !tcssh
 !.bashrc
+!.bash_profile
 !.config
 !.config/bspwm
 !.config/bspwm/bspwmrc
