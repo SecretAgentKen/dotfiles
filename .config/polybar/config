@@ -112,6 +112,9 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
+mount-1 = /boot
+mount-2 = /mnt/speedy
+mount-3 = /mnt/Multimedia
 
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
@@ -158,7 +161,7 @@ label = %percentage_used%%
 
 [module/eth]
 type = internal/network
-interface = ens3
+interface = wlp2s0
 interval = 3.0
 
 format-connected-underline = ${colors.base0e}

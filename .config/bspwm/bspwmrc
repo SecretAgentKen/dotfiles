@@ -5,9 +5,13 @@ polybar -r primary &
 dunst &
 compton -cb
 dropbox &
+blueman-applet &
+pulseaudio --daemonize
 xset m 1/1
+xsetroot -cursor_name left_ptr
 xss-lock -- i3lock -nf -B 8 --indicator &
 feh --bg-scale ~/.config/wallpaper
+pm2 resurrect
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 

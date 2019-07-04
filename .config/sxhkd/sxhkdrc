@@ -18,10 +18,10 @@ super + l
 	xset dpms force off
 
 XF86Audio{Raise,Lower}Volume
-	amixer sset Master {1+,1-} unmute
+	pamixer {-i,-d} 5 -u
 
 XF86AudioMute
-	amixer sset Master toggle
+	pamixer -t
 
 #
 # bspwm hotkeys
