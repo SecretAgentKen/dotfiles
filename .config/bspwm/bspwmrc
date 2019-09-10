@@ -6,6 +6,7 @@ dunst &
 compton -cb
 dropbox &
 blueman-applet &
+udiskie &
 pulseaudio --daemonize
 xset m 1/1
 xsetroot -cursor_name left_ptr
@@ -27,3 +28,5 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+bspc rule -a Steam state=pseudo_tiled
+bspc rule -a Virt-manager state=pseudo_tiled
