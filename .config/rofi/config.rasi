@@ -1,0 +1,5 @@
+configuration {
+  show-icons: true;
+  hide-scrollbar: true;
+  theme: "gruvbox-dark-medium";
+}

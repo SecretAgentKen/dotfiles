@@ -18,6 +18,8 @@
 !.config/polybar/config
 !.config/termite
 !.config/termite/config
+!.config/rofi
+!.config/rofi/*
 !.local
 !.local/share
 !.local/share/rofi

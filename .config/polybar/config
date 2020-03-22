@@ -17,13 +17,6 @@
 ;==========================================================
 
 [colors]
-;background = #222
-;background-alt = #444
-;foreground = #dfdfdf
-;foreground-alt = #555
-;primary = #ffb52a
-;secondary = #e60053
-;alert = #bd2c40
 background = #282828
 background-alt = #3c3836
 foreground = #fbf1c7
@@ -38,11 +31,8 @@ base0e = #d3869b
 base0f = #d65d0e
 
 [bar/primary]
-;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 27
-;offset-x = 1%
-;offset-y = 1%
 radius = 0.0
 fixed-center = false
 
@@ -52,13 +42,13 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-;border-size = 4
+border-size = 0
 border-color = #00000000
 
-padding-left = 2 
-padding-right = 2
+padding-left = 0 
+padding-right = 0
 
-module-margin-left = 1
+module-margin-left = 2
 module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
@@ -67,22 +57,10 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = filesystem alsa memory cpu wlan eth date 
+modules-right = filesystem alsa memory cpu eth date
 
 tray-position = right
 tray-padding = 2
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -179,7 +157,7 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
+date = " %m-%d"
 date-alt = " %Y-%m-%d"
 
 time = %H:%M
