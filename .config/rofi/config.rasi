@@ -2,4 +2,19 @@ configuration {
   show-icons: true;
   hide-scrollbar: true;
   theme: "gruvbox-dark-medium";
+  icon-theme: "Papirus";
+  combi-modi: "drun,run";
+  modi: "combi";
+  width: 25;
+  lines: 8;
+  columns: 2;
+  combi-hide-mode-prefix: true;
+}
+
+window {
+  transparency: "real";
+}
+
+prompt {
+  enabled: false;
 }
