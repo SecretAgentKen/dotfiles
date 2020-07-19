@@ -1,22 +1,25 @@
-own_window yes
-own_window_type desktop
-own_window_transparent no
-own_window_argb_visual yes
-own_window_color 000000
-own_window_argb_value 0
-alignment bl
-background true
-gap_x 15
-gap_y 65
-use_xft yes
-xftfont Noto Mono:size=20
-xftalpha .1
-update_interval 15.0
-uppercase yes
-double_buffer yes
-default_color ffffff
-color1 222222
-TEXT
+conky.config = {
+	own_window = true,
+	own_window_type = 'desktop',
+	own_window_transparent = false,
+	own_window_argb_visual = true,
+	own_window_color = '000000',
+	own_window_argb_value = 0,
+	alignment = 'bottom_left',
+	background = true,
+	gap_x = 15,
+	gap_y = 15,
+	use_xft = true,
+	font = 'Noto Sans Mono:size=20',
+	xftalpha = .1,
+	update_interval = 15.0,
+	uppercase = true,
+	double_buffer = true,
+	default_color = '#ffffff',
+	color1 = '#222222',
+};
+
+conky.text = [[
 ${color}I T ${color1}L ${color}I S ${color1}A S T I M E
 ${if_match ${exec date +"%M"} < 35}${if_match ${exec date +"%M"} >= 15}${if_match ${exec date +"%M"} < 20}${color}${endif}${endif}A ${color1}C ${if_match ${exec date +"%M"} >= 15}${if_match ${exec date +"%M"} < 20}${color}${endif}${endif}Q U A R T E R ${color1}D C
 ${if_match ${exec date +"%M"} >= 20}${if_match ${exec date +"%M"} < 30}${color}${endif}${endif}T W E N T Y ${if_match ${exec date +"%M"} >= 25}${if_match ${exec date +"%M"} < 30}${color}${endif}${else}${color1}${endif}${if_match ${exec date +"%M"} >= 5}${if_match ${exec date +"%M"} < 10}${color}${endif}${endif}F I V E ${color1}X
@@ -36,3 +39,4 @@ ${if_match ${exec date +"%I"} == 7}${color}${else}${color1}${endif}E I G H T${if
 ${if_match ${exec date +"%I"} == 6}${color}${else}${color1}${endif}S E V E N${if_match ${exec date +"%I"} == 11}${color}${else}${color1}${endif} T W E L V E
 ${if_match ${exec date +"%I"} == 9}${color}${else}${color1}${endif}T E N ${endif}${color1}S E ${if_match ${exec date +"%M"} < 5}${color}${endif}O C L O C K
     ${if_match ${exec date +"%M" | awk '{print $1"%5"}' | bc} >= 1}${color}${else}${color1}${endif}.   ${if_match ${exec date +"%M" | awk '{print $1"%5"}' | bc} >= 2}${color}${else}${color1}${endif}.   ${if_match ${exec date +"%M" | awk '{print $1"%5"}' | bc} >= 3}${color}${else}${color1}${endif}.   ${if_match ${exec date +"%M" | awk '{print $1"%5"}' | bc} >= 4}${color}${else}${color1}${endif}.
+]];

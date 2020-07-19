@@ -3,7 +3,7 @@ configuration {
   hide-scrollbar: true;
   theme: "gruvbox-dark-medium";
   icon-theme: "Papirus";
-  combi-modi: "drun,run";
+  combi-modi: [drun,run];
   modi: "combi";
   width: 25;
   lines: 8;
