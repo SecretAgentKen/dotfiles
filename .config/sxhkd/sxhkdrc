@@ -65,7 +65,7 @@ super + bracket{left,right}
 
 # Rotate
 super + shift + {Left,Right}
-	bspc node @focused:/ -R {270,90}
+	bspc node @parent -R {270,90}
 
 # focus the last node/desktop
 super + {grave,Tab}

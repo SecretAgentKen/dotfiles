@@ -13,6 +13,7 @@ udiskie &
 blueman-applet &
 xss-lock -- i3lock -nf -B 8 --indicator &
 feh --bg-scale ~/.config/wallpaper
+conky
 
 bspc monitor -d 1 2 3 4 
 
