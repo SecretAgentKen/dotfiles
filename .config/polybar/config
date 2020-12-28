@@ -57,7 +57,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = filesystem alsa memory cpu eth date
+modules-right = filesystem capture pulseaudio memory cpu eth date
 
 tray-position = right
 tray-padding = 2
@@ -171,16 +171,34 @@ format-underline = ${colors.base0f}
 
 label = %date% %time%
 
+[module/capture]
+type = custom/script
+exec = /home/gtaluvit/bin/capturehook
+tail = true
+
+[module/pulseaudio]
+type = internal/pulseaudio
+use-ui-max = false
+interval = 5
+format-volume-underline = ${colors.primary}
+label-muted = muted
+
 [module/alsa]
 type = internal/alsa
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
+format-volume = <ramp-volume> <label-volume>
 label-volume-foreground = ${root.foreground}
+format-volume-underline = ${colors.primary}
 
 format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
+label-muted = muted
+
+ramp-volume-0 = " "
+ramp-volume-1 = " "
+ramp-volume-2 = " "
+ramp-volume-3 = " "
+ramp-volume-4 = " "
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55

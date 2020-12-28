@@ -23,6 +23,9 @@ XF86Audio{Raise,Lower}Volume
 XF86AudioMute
 	pamixer -t
 
+super + z
+	amixer set Capture toggle
+
 #
 # bspwm hotkeys
 #

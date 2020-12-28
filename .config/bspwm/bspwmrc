@@ -1,7 +1,7 @@
 #! /bin/sh
 
 pulseaudio -k
-pulseaudio --daemonize
+pulseaudio -D
 xset m 1/1
 xsetroot -cursor_name left_ptr
 sxhkd &
@@ -9,7 +9,7 @@ polybar -r primary &
 dunst &
 picom -cb
 dropbox &
-udiskie &
+udiskie --tray &
 blueman-applet &
 xss-lock -- i3lock -nf -B 8 --indicator &
 feh --bg-scale ~/.config/wallpaper
@@ -31,3 +31,4 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Steam state=pseudo_tiled
 bspc rule -a Virt-manager state=pseudo_tiled
+
