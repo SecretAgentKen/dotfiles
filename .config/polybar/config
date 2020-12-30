@@ -52,8 +52,7 @@ module-margin-left = 2
 module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-1 = siji:pixelsize=10;1
 
 modules-left = bspwm
 modules-center = xwindow
@@ -175,24 +174,20 @@ label = %date% %time%
 type = custom/script
 exec = /home/gtaluvit/bin/capturehook
 tail = true
+format-underline = ${colors.secondary}
+
+label = " %output%"
+
+click-left = amixer set Capture toggle
 
 [module/pulseaudio]
 type = internal/pulseaudio
 use-ui-max = false
 interval = 5
-format-volume-underline = ${colors.primary}
-label-muted = muted
-
-[module/alsa]
-type = internal/alsa
-
 format-volume = <ramp-volume> <label-volume>
-label-volume-foreground = ${root.foreground}
 format-volume-underline = ${colors.primary}
-
-format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
-label-muted = muted
+label-muted = "  muted"
+format-muted-underline = ${colors.primary}
 
 ramp-volume-0 = " "
 ramp-volume-1 = " "
@@ -200,22 +195,7 @@ ramp-volume-2 = " "
 ramp-volume-3 = " "
 ramp-volume-4 = " "
 
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+click-right = pavucontrol
 
 [settings]
 screenchange-reload = true
