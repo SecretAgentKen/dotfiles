@@ -1,20 +1,92 @@
 configuration {
   show-icons: true;
   hide-scrollbar: true;
-  theme: "gruvbox-dark-medium";
   icon-theme: "Papirus";
   combi-modi: [drun,run];
   modi: "combi";
-  width: 25;
-  lines: 8;
-  columns: 2;
   combi-hide-mode-prefix: true;
 }
 
+* {
+  background:                     rgba ( 40, 40, 40, 100 % );
+  background-alt:                 @background;
+  foreground:                     rgba ( 213, 196, 161, 100 % );
+  lightfg:                        rgba ( 235, 219, 178, 100 % );
+  lightbg:                        rgba ( 60, 56, 54, 100 % );
+  border:               			    @foreground; 
+  border-alt:               	    @lightfg; 
+  selected:               		    @lightbg; 
+  urgent:                         rgba ( 251, 73, 52, 100 % );
+  maxheight:                      60%;
+}
+
 window {
-  transparency: "real";
+  transparency:                   "real";
+  background-color:               @background;
+  text-color:                     @foreground;
+  border:							            0 0 25px 0;
+  border-color:					          @border;
+  border-radius:                  25px 25px 50px 50px;
+  height:                         65%;
+  width:                          55%;
 }
 
 prompt {
-  enabled: false;
+  enabled: 						            false;
+}
+
+entry {
+  background-color:               @background;
+  text-color:                     @foreground;
+  placeholder:                    " Search Applications";
+  blink:                          true;
+}
+
+
+inputbar {
+  background-color:               @background;
+  border-color:                   @border-alt;
+  border:                         0 0 5px 0;
+  border-radius:                  25px;
+  padding:                        10px 20px;
+  margin:                         0;
+  children:                       [ prompt, entry ];
+}
+
+listview {
+  columns:                        6;
+  background-color:               @background;
+}
+
+mainbox {
+  spacing: 20px;
+  background-color:               @background;
+  border:                         0 0 25px 0;
+  border-color:                   @border-alt;
+  border-radius:                  50px;
+  padding:                        20px;
+}
+
+element {
+  background-color:               @background;
+  text-color:                     @foreground;
+  orientation:                    vertical;
+  border-radius:                  0%;
+  padding:                        10px 0px;
+}
+
+element-icon {
+  size:                           64px;
+}
+
+element-text {
+  horizontal-align:               0.5;
+  margin:                         5px 20px 0 20px;
+}
+
+element selected {
+  background-color:               @selected;
+  border-radius:                  25px;
+  border-color:                   @border-alt;
+  border:                         0 0 5px 0;
 }
