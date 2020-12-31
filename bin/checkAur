@@ -1,0 +1,11 @@
+#!/bin/bash
+for D in ~/aur/*/;
+do
+    cd ${D}
+    git fetch
+    VER=$(git rev-list --count master...origin/master)
+    if [ "${VER}" -ne "0" ]; then
+        # For now, just mention directory
+        echo "${D}: ${VER}"
+    fi
+done
