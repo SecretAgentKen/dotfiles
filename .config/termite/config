@@ -1,3 +1,6 @@
+[options]
+font = DejaVu Sans Mono Book 11
+
 [colors]
 # Base16 Gruvbox dark, medium
 # Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
