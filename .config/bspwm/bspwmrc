@@ -1,7 +1,6 @@
 #! /bin/sh
 
-pulseaudio -k
-pulseaudio -D
+start-pulseaudio-x11
 xset m 1/1
 xsetroot -cursor_name left_ptr
 sxhkd &
