@@ -17,18 +17,18 @@
 ;==========================================================
 
 [colors]
-background = #282828
-background-alt = #3c3836
-foreground = #fbf1c7
-foreground-alt = #ebdbb2
-primary = #fb4934
-secondary = #fe8019
-alert = #b8bb26
+background = #161616
+background-alt = #222222
+foreground = #ffffff
+foreground-alt = #dddddd
+primary = #e84f4f
+secondary = #b7ce42
+alert = #fea63c
 
-base0c = #8ec07c
-base0d = #83a598
-base0e = #d3869b
-base0f = #d65d0e
+base0c = #66aabb
+base0d = #b7416e
+base0e = #6d878d
+base0f = #42717b
 
 [bar/primary]
 width = 100%
@@ -79,7 +79,7 @@ mount-1 = /boot
 mount-2 = /mnt/speedy
 mount-3 = /mnt/Multimedia
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#66aabb}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 

@@ -10,15 +10,15 @@ configuration {
 }
 
 * {
-  background:               rgba ( 40, 40, 40, 100 % );
+  background:               #161616;
   background-alt:           @background;
-  foreground:               rgba ( 213, 196, 161, 100 % );
-  lightfg:                  rgba ( 235, 219, 178, 100 % );
-  lightbg:                  rgba ( 60, 56, 54, 100 % );
-  border:                   @foreground;
-  border-alt:               @lightfg;
+  foreground:               #cccccc;
+  lightfg:                  #dddddd;
+  lightbg:                  #222222;
+  border:                   #42717b;
+  border-alt:               #6d878d;
   selected:                 @lightbg;
-  urgent:                   rgba ( 251, 73, 52, 100 % );
+  urgent:                   #e84f4f;
 }
 
 window {

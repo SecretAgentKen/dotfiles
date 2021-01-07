@@ -1,52 +1,43 @@
 [options]
 font = DejaVu Sans Mono Book 11
 
+# hund
 [colors]
-# Base16 Gruvbox dark, medium
-# Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 
-foreground          = #d5c4a1
-foreground_bold     = #ebdbb2
-cursor              = #ebdbb2
-cursor_foreground   = #282828
-background          = rgba(40, 40, 40)
+# special
+foreground      = #ffffff
+foreground_bold = #ffffff
+cursor          = #ffffff
+background      = #161616
 
-# 16 color space
+# black
+color0  = #222222
+color8  = #666666
 
-# Black, Gray, Silver, White
-color0  = #282828
-color8  = #665c54
-color7  = #d5c4a1
-color15 = #fbf1c7
+# red
+color1  = #e84f4f
+color9  = #d23d3d
 
-# Red
-color1  = #fb4934
-color9  = #fb4934
+# green
+color2  = #b7ce42
+color10 = #bde077
 
-# Green
-color2  = #b8bb26
-color10 = #b8bb26
+# yellow
+color3  = #fea63c
+color11 = #ffe863
 
-# Yellow
-color3  = #fabd2f
-color11 = #fabd2f
+# blue
+color4  = #66aabb
+color12 = #aaccbb
 
-# Blue
-color4  = #83a598
-color12 = #83a598
+# magenta
+color5  = #b7416e
+color13 = #e16a98
 
-# Purple
-color5  = #d3869b
-color13 = #d3869b
+# cyan
+color6  = #6d878d
+color14 = #42717b
 
-# Teal
-color6  = #8ec07c
-color14 = #8ec07c
-
-# Extra colors
-color16 = #fe8019
-color17 = #d65d0e
-color18 = #3c3836
-color19 = #504945
-color20 = #bdae93
-color21 = #ebdbb2
+# white
+color7  = #dddddd
+color15 = #cccccc
