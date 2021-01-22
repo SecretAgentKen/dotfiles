@@ -54,6 +54,10 @@ super + {t,shift + t,s,f}
 super + g
 	bspc node -s biggest.local
 
+# Move to the first page and everything else to two
+super + b
+	bspc node -s @/second --follow;  bspc node -s @/first
+
 # swap the node in the given direction
 super + {Left,Down,Up,Right}
 	bspc node -s {west,south,north,east}

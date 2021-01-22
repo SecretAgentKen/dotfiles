@@ -5,9 +5,11 @@ xset m 1/1
 xsetroot -cursor_name left_ptr
 sxhkd &
 polybar -r primary &
+lxpolkit &
 dunst &
 picom -cb
 dropbox &
+deckxstream &
 udiskie --tray &
 blueman-applet &
 xss-lock -- i3lock -nf -B 8 --indicator &
