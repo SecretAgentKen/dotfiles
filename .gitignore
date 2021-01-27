@@ -4,6 +4,7 @@
 !.conkyrc
 !bin
 !tcssh
+!.deckxstream.json
 !.bashrc
 !.bash_profile
 !.config

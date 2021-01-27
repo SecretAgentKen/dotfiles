@@ -1,0 +1,162 @@
+{
+	"deckxstream-version": 1,
+	"brightness": 70,
+	"screensaver": {
+		"animation": "/home/gtaluvit/Dropbox/Streamdeck/giphy.gif",
+		"brightness": 10,
+		"timeoutMinutes": 20
+	},
+	"sticky": [
+		{
+			"keyIndex": 0,
+			"icon": "/home/gtaluvit/Dropbox/Streamdeck/avatar.png",
+			"changePage": "default",
+			"text": ""
+		},
+		{
+			"keyIndex": 4,
+			"icon": "/home/gtaluvit/Dropbox/Streamdeck/yast-sound.svg",
+			"text": "Mute",
+			"command": "amixer set Master toggle"
+		}
+	],
+	"pages": [
+		{
+			"pageName": "default",
+			"buttons": [
+				{
+					"keyIndex": 1,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Snes_pad.png",
+					"changePage": "retroarch"
+				},
+				{
+					"keyIndex": 2,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/live.png",
+					"changePage": "live"
+				},
+				{
+					"keyIndex": 3,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/virt-manager.svg",
+					"changePage": "vm"
+				},
+				{
+					"keyIndex": 5,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/twitch.svg",
+					"command": "google-chrome-stable \"https://twitch.tv\""
+				},
+				{
+					"keyIndex": 6,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/reddit.svg",
+					"command": "google-chrome-stable https://reddit.com"
+				},
+				{
+					"keyIndex": 7,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/youtube.svg",
+					"command": "google-chrome-stable https://youtube.com/feed/subscriptions"
+				},
+				{
+					"keyIndex": 8,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/gmail.svg",
+					"command": "google-chrome-stable https://mail.google.com"
+				},
+				{
+					"keyIndex": 9,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/box.svg",
+					"command": "google-chrome-stable https://amazon.com"
+				},
+				{
+					"keyIndex": 10,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/dialog-password.svg",
+					"sendkey": "command+l"
+				},
+				{
+					"keyIndex": 11,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/google-chrome.svg",
+					"command": "google-chrome-stable --new-window"
+				},
+				{
+					"keyIndex": 13,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/redshift.svg",
+					"changeBrightness": 10,
+					"command": "redshift -x; redshift -O 4000 -b .5"
+				},
+				{
+					"keyIndex": 14,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/preferences-system-brightness-lock.svg",
+					"changeBrightness": 70,
+					"command": "redshift -x"
+				}
+			]
+		},
+		{
+			"pageName": "retroarch",
+			"buttons": [
+				{
+					"keyIndex": 1,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Snes_pad.png"
+				},
+				{
+					"keyIndex": 10,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/rating.svg",
+					"sendkey": "f2",
+					"text": "Save"
+				},
+				{
+					"keyIndex": 7,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/emblem-added.svg",
+					"sendkey": "f7"
+				},
+				{
+					"keyIndex": 12,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/emblem-remove.svg",
+					"sendkey": "f6"
+				},
+				{
+					"keyIndex": 14,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/vcs-update-required.svg",
+					"sendkey": "f4",
+					"text": "Load"
+				}
+			]
+		},
+		{
+			"pageName": "vm",
+			"buttons": [
+				{
+					"keyIndex": 3,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/virt-manager.svg"
+				},
+				{
+					"keyIndex": 10,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/games-config-tiles.svg",
+					"command": "bspc node @/ -E"
+				},
+				{
+					"keyIndex": 13,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/go-first.svg",
+					"sendkey": "command+b"
+				},
+				{
+					"keyIndex": 14,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/expand.svg",
+					"command": "bspc node @/ -r +156"
+				}
+			]
+		},
+		{
+			"pageName": "live",
+			"buttons": [
+				{
+					"keyIndex": 2,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/live.png"
+				},
+				{
+					"keyIndex": 14,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/gnome-sound-recorder.svg",
+					"command": "amixer set Capture toggle",
+					"text": "Mute"
+				}
+			]
+		}
+	]
+}
