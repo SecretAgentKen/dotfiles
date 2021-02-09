@@ -9,7 +9,7 @@ lxpolkit &
 dunst &
 picom -cb
 dropbox &
-deckxstream &
+/home/gtaluvit/.npm-global/bin/deckxstream &
 udiskie --tray &
 blueman-applet &
 xss-lock -- i3lock -nf -B 8 --indicator &

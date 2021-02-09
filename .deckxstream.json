@@ -67,7 +67,8 @@
 				{
 					"keyIndex": 10,
 					"icon": "/home/gtaluvit/Dropbox/Streamdeck/dialog-password.svg",
-					"sendkey": "command+l"
+					"sendkey": "command+l",
+					"startScreensaver": true
 				},
 				{
 					"keyIndex": 11,
