@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+IDS="/tmp/soundboard.txt"
+
+if [ ! -f "${IDS}" ]; then
+	exit 1
+fi
+
+while read -r module; do
+  	if [[ "${module}" =~ ^[0-9]+$ ]]; then
+		pactl unload-module "${module}" || true
+	fi
+done < "${IDS}"
+
+rm "${IDS}"

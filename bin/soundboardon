@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+MIC="alsa_input.usb-Blue_Microphones_Yeti_Stereo_Microphone_REV8-00.analog-stereo"
+OUT="alsa_output.usb-Schiit_Audio_Schiit_Modi_3_-00.iec958-stereo"
+IDS="/tmp/soundboard.txt"
+
+pactl load-module module-null-sink sink_name=SoundBoard sink_properties=device.description="SoundBoard" >> "${IDS}"
+pactl load-module module-null-sink sink_name=CombinedInput sink_properties=device.description="CombinedInput" >> "${IDS}"
+
+pactl load-module module-loopback source=SoundBoard.monitor sink="${OUT}" latency_msec=1 >> "${IDS}"
+pactl load-module module-loopback source=SoundBoard.monitor sink=CombinedInput latency_msec=1 >> "${IDS}"
+pactl load-module module-loopback source="${MIC}" sink=CombinedInput latency_msec=1 >> "${IDS}"
+pactl set-source-volume SoundBoard.monitor 50000
+pactl set-default-source CombinedInput.monitor
