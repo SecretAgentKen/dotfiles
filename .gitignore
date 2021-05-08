@@ -17,8 +17,8 @@
 !.config/compton/compton.conf
 !.config/polybar
 !.config/polybar/config
-!.config/termite
-!.config/termite/config
+!.config/alacritty
+!.config/alacritty/alacritty.yml
 !.config/rofi
 !.config/rofi/*
 !.local

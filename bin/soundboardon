@@ -13,4 +13,5 @@ pactl load-module module-loopback source=SoundBoard.monitor sink="${OUT}" latenc
 pactl load-module module-loopback source=SoundBoard.monitor sink=CombinedInput latency_msec=1 >> "${IDS}"
 pactl load-module module-loopback source="${MIC}" sink=CombinedInput latency_msec=1 >> "${IDS}"
 pactl set-source-volume SoundBoard.monitor 50000
+pactl set-source-volume "${MIC}" 60000
 pactl set-default-source CombinedInput.monitor

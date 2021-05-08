@@ -67,7 +67,7 @@
 				{
 					"keyIndex": 10,
 					"icon": "/home/gtaluvit/Dropbox/Streamdeck/dialog-password.svg",
-					"sendkey": "command+l",
+					"sendkey": "super+l",
 					"startScreensaver": true
 				},
 				{
@@ -99,23 +99,23 @@
 				{
 					"keyIndex": 10,
 					"icon": "/home/gtaluvit/Dropbox/Streamdeck/rating.svg",
-					"sendkey": "f2",
+					"sendkey": "F2",
 					"text": "Save"
 				},
 				{
 					"keyIndex": 7,
 					"icon": "/home/gtaluvit/Dropbox/Streamdeck/emblem-added.svg",
-					"sendkey": "f7"
+					"sendkey": "F7"
 				},
 				{
 					"keyIndex": 12,
 					"icon": "/home/gtaluvit/Dropbox/Streamdeck/emblem-remove.svg",
-					"sendkey": "f6"
+					"sendkey": "F6"
 				},
 				{
 					"keyIndex": 14,
 					"icon": "/home/gtaluvit/Dropbox/Streamdeck/vcs-update-required.svg",
-					"sendkey": "f4",
+					"sendkey": "F4",
 					"text": "Load"
 				}
 			]
@@ -135,7 +135,7 @@
 				{
 					"keyIndex": 13,
 					"icon": "/home/gtaluvit/Dropbox/Streamdeck/go-first.svg",
-					"sendkey": "command+b"
+					"sendkey": "super+b"
 				},
 				{
 					"keyIndex": 14,
@@ -148,14 +148,77 @@
 			"pageName": "live",
 			"buttons": [
 				{
+					"keyIndex": 1,
+					"text": "ON",
+					"command": "/home/gtaluvit/bin/soundboardon"
+				},
+				{
 					"keyIndex": 2,
-					"icon": "/home/gtaluvit/Dropbox/Streamdeck/live.png"
+					"text": "OFF",
+					"command": "/home/gtaluvit/bin/soundboardoff"
+				},
+				{
+					"keyIndex": 3,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/gnome-sound-recorder.svg",
+					"command": "pactl set-source-mute alsa_input.usb-Blue_Microphones_Yeti_Stereo_Microphone_REV8-00.analog-stereo toggle",
+					"text": "Mute"
+				},
+				{
+					"keyIndex": 5,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Soundboard/airhorn.svg",
+					"command": "mplayer -ao pulse::SoundBoard /home/gtaluvit/Dropbox/Streamdeck/Soundboard/airhorn.mp3"
+				},
+				{
+					"keyIndex": 6,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Soundboard/carelessWhisper.webp",
+					"text": "Careless Whisper",
+					"command": "mplayer -ao pulse::SoundBoard /home/gtaluvit/Dropbox/Streamdeck/Soundboard/carelessWhisper.mp3"
+				},
+				{
+					"keyIndex": 7,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Soundboard/rimshot.png",
+					"text": "Rimshot",
+					"command": "mplayer -ao pulse::SoundBoard /home/gtaluvit/Dropbox/Streamdeck/Soundboard/rimshot.mp3"
+				},
+				{
+					"keyIndex": 8,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Soundboard/ffFanfare.webp",
+					"text": "Fanfare",
+					"command": "mplayer -ao pulse::SoundBoard /home/gtaluvit/Dropbox/Streamdeck/Soundboard/ffFanfare.mp3"
+				},
+				{
+					"keyIndex": 9,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Soundboard/letsGetItOn.png",
+					"text": "Get It On",
+					"command": "mplayer -ao pulse::SoundBoard /home/gtaluvit/Dropbox/Streamdeck/Soundboard/letsGetItOn.mp3"
+				},
+				{
+					"keyIndex": 10,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Soundboard/priceIsWrong.jpg",
+					"command": "mplayer -ao pulse::SoundBoard /home/gtaluvit/Dropbox/Streamdeck/Soundboard/priceIsWrong.mp3"
+				},
+				{
+					"keyIndex": 11,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Soundboard/sadTrombone.png",
+					"text": "Sad",
+					"command": "mplayer -ao pulse::SoundBoard /home/gtaluvit/Dropbox/Streamdeck/Soundboard/sadTrombone.mp3"
+				},
+				{
+					"keyIndex": 12,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Soundboard/sus.webp",
+					"text": "Imposter!",
+					"command": "mplayer -ao pulse::SoundBoard /home/gtaluvit/Dropbox/Streamdeck/Soundboard/sus.mp3"
+				},
+				{
+					"keyIndex": 13,
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Soundboard/wrongBuzzer.png",
+					"text": "Buzzer",
+					"command": "mplayer -ao pulse::SoundBoard /home/gtaluvit/Dropbox/Streamdeck/Soundboard/wrongBuzzer.mp3"
 				},
 				{
 					"keyIndex": 14,
-					"icon": "/home/gtaluvit/Dropbox/Streamdeck/gnome-sound-recorder.svg",
-					"command": "amixer set Capture toggle",
-					"text": "Mute"
+					"icon": "/home/gtaluvit/Dropbox/Streamdeck/Soundboard/zeldaChest.png",
+					"command": "mplayer -ao pulse::SoundBoard /home/gtaluvit/Dropbox/Streamdeck/Soundboard/zeldaChest.mp3"
 				}
 			]
 		}
