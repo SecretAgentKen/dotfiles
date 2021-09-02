@@ -17,7 +17,7 @@
 			"keyIndex": 4,
 			"icon": "/home/gtaluvit/Dropbox/Streamdeck/yast-sound.svg",
 			"text": "Mute",
-			"command": "amixer set Master toggle"
+			"command": "pamixer -t"
 		}
 	],
 	"pages": [
