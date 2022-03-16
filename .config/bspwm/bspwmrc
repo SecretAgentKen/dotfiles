@@ -11,7 +11,7 @@ picom -cb
 dropbox &
 /home/gtaluvit/.npm-global/bin/deckxstream &
 udiskie --tray &
-blueman-applet &
+blueberry-tray &
 xss-lock -- i3lock -nf -B 8 --indicator &
 feh --bg-scale ~/.config/wallpaper
 conky

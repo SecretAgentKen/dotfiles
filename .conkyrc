@@ -10,7 +10,7 @@ conky.config = {
 	gap_x = 15,
 	gap_y = 15,
 	use_xft = true,
-	font = 'Noto Sans Mono:size=20',
+	font = 'Fira Code:size=24',
 	xftalpha = .1,
 	update_interval = 15.0,
 	uppercase = true,
