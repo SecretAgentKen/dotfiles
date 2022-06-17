@@ -1,2 +1,2 @@
 #!/bin/bash
-comm -23 <(pacman -Qqt | sort) <(pacman -Sqg base base-devel xorg | sort)
+comm -23 <(pacman -Qqt | sort) <(pacman -Sqg base base-devel xorg gnome | sort)
