@@ -8,7 +8,7 @@ do
 	#	input="root@$input"
 	#fi
 	# Add 10% panes with the SSH command
-	tmux split-window -p 10 "ssh $input"
+	tmux split-window -l 10% "ssh $input"
 
 	# Select the original pane
 	tmux select-pane -l
