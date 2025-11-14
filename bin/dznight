@@ -1,5 +1,0 @@
-#!/bin/sh
-
-echo  | dzen2 -bg "#61453A" -fg "#AFA4B5" -fn "FontAwesome:size=30" -x 3380 -y 1340 -w 50 -e "button1=exec:daynight" -p &
-sleep 1s
-transset -n "dzen *" .3

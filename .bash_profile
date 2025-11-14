@@ -9,3 +9,5 @@
 #fi
 
 source $HOME/.kube/completion.bash.inc
+
+export QT_QPA_PLATFORMTHEME=gtk3
