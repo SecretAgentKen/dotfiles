@@ -1,63 +1,33 @@
 {
-	"deckxstream-version": 1,
-	"brightness": 70,
-	"screensaver": {
-		"animation": "/home/gtaluvit/Dropbox/Streamdeck/giphy.gif",
-		"brightness": 10,
-		"timeoutMinutes": 20
-	},
-	"pages": [
+  "deckxstream-version": 1,
+  "brightness": 70,
+  "pages": [
+    {
+      "pageName": "default",
+      "buttons": [
 		{
-			"pageName": "default",
-			"buttons": [
-				{
-					"keyIndex": 0,
-					"command": "curl 'http://10.1.2.245/win&T=0'",
-					"text": "Off",
-					"icon": "/home/gtaluvit/Dropbox/Streamdeck/gshutdown.svg"
-				},
-				{
-					"keyIndex": 2,
-					"command": "if $(gsettings get org.gnome.desktop.a11y.applications screen-magnifier-enabled); then gsettings set org.gnome.desktop.a11y.applications screen-magnifier-enabled false; else gsettings set org.gnome.desktop.a11y.applications screen-magnifier-enabled true; fi",
-					"icon": "/home/gtaluvit/Dropbox/Streamdeck/preferences-system-brightness-lock.svg",
-					"text": "Dim"
-				},
-				{
-					"keyIndex": 4,
-					"icon": "/home/gtaluvit/Dropbox/Streamdeck/yast-sound.svg",
-					"text": "Mute",
-					"command": "pamixer -t"
-				},
-				{
-					"keyIndex": 10,
-					"command": "curl 'http://10.1.2.245/win&T=1&PL=4'",
-					"text": "Shadow",
-					"changeBrightness": 10
-				},
-				{
-					"keyIndex": 11,
-					"command": "curl 'http://10.1.2.245/win&T=1&PL=5'",
-					"text": "Fireworks",
-					"changeBrightness": 10
-				},
-				{
-					"keyIndex": 12,
-					"command": "curl 'http://10.1.2.245/win&T=1&PL=2'",
-					"text": "Candle",
-					"changeBrightness": 70
-				},
-				{
-					"keyIndex": 13,
-					"command": "curl 'http://10.1.2.245/win&T=1&PL=1'",
-					"text": "Lava",
-					"changeBrightness": 70
-				},
-				{
-					"keyIndex": 14,
-					"icon": "/home/gtaluvit/Dropbox/Streamdeck/redshift.svg",
-					"command": "google-chrome-stable 'http://10.1.2.245/'"
-				}
-			]
-		}
-	]
+			"keyIndex": 0,
+			"obs": "BRB",
+			"text": "BRB"
+		},
+		{
+			"keyIndex": 10,
+			"obs": "Full",
+			"text": "Live"
+		},
+        {
+          "keyIndex": 4,
+          "command": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+          "icon": "/home/gtaluvit/Dropbox/Streamdeck/gnome-sound-recorder.svg",
+          "text": "Mute"
+        },
+        {
+          "keyIndex": 14,
+          "icon": "/home/gtaluvit/Dropbox/Streamdeck/yast-sound.svg",
+          "text": "Mute",
+          "command": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        }
+      ]
+    }
+  ]
 }
