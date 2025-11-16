@@ -2,10 +2,16 @@ input {
     mouse {
         accel-profile "flat"
     }
+
+    touchpad {
+	tap
+	natural-scroll
+	disabled-on-external-mouse
+    }
 }
 
 layout {
-    gaps 16
+    gaps 8
 
     always-center-single-column
 
