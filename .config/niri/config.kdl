@@ -182,13 +182,10 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
-
-    // FROM DMS
-    Mod+Space hotkey-overlay-title="Application Launcher" { 
-        spawn "dms" "ipc" "call" "spotlight" "toggle"; 
-    }
-
-    Mod+Alt+L hotkey-overlay-title="Lock Screen" { 
-        spawn "dms" "ipc" "call" "lock" "lock"; 
-    }
 }
+
+include "dms/alttab.kdl"
+include "dms/binds.kdl"
+include "dms/colors.kdl"
+include "dms/layout.kdl"
+include "dms/wpblur.kdl"
