@@ -12,5 +12,7 @@
 !.config/DankMaterialShell/settings.json
 !.config/niri
 !.config/niri/config.kdl
+!.config/niri/local
+!.config/niri/local/*
 !.config/environment.d
 !.config/environment.d/90-dms.conf
