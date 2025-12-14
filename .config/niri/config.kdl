@@ -2,8 +2,6 @@ include "local/input.kdl"
 include "local/binds.kdl"
 include "local/gestures.kdl"
 
-
-
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-sh-at-startup "sleep 10 && udiskie --appindicator -t"
 
@@ -23,8 +21,6 @@ hotkey-overlay {
     hide-not-bound
     skip-at-startup
 }
-
-
 
 include "dms/alttab.kdl"
 include "dms/binds.kdl"

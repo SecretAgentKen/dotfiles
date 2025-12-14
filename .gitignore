@@ -13,4 +13,4 @@
 !.config/niri
 !.config/niri/config.kdl
 !.config/niri/local
-!.config/niri/local/*
+!.config/niri/local/*.kdl
