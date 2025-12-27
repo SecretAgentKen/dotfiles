@@ -8,6 +8,8 @@
 !.bashrc
 !.bash_profile
 !.config
+!.config/alacritty
+!.config/alacritty/alacritty.toml
 !.config/DankMaterialShell
 !.config/DankMaterialShell/settings.json
 !.config/niri
