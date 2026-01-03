@@ -159,7 +159,7 @@
   "batteryProfileName": "",
   "lockBeforeSuspend": false,
   "loginctlLockIntegration": true,
-  "fadeToLockEnabled": false,
+  "fadeToLockEnabled": true,
   "fadeToLockGracePeriod": 5,
   "launchPrefix": "",
   "brightnessDevicePins": {},
@@ -213,7 +213,8 @@
     "reboot",
     "logout",
     "poweroff",
-    "lock"
+    "lock",
+    "restart"
   ],
   "powerMenuDefaultAction": "logout",
   "powerMenuGridLayout": false,
@@ -304,7 +305,7 @@
       "borderOpacity": 1,
       "borderThickness": 1,
       "fontScale": 1,
-      "autoHide": false,
+      "autoHide": true,
       "autoHideDelay": 250,
       "openOnOverview": false,
       "visible": true,

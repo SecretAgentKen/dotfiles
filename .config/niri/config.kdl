@@ -2,6 +2,10 @@ include "local/input.kdl"
 include "local/binds.kdl"
 include "local/gestures.kdl"
 
+output "DP-2" {
+    variable-refresh-rate on-demand=true
+}
+
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-sh-at-startup "sleep 10 && udiskie --appindicator -t"
 
