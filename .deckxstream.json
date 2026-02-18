@@ -1,23 +1,33 @@
 {
-  "deckxstream-version": 1,
+  "deckxstreamConfigVersion": 2,
   "brightness": 70,
   "pages": [
     {
       "pageName": "default",
       "buttons": [
-		{
-			"keyIndex": 0,
-			"obs": "BRB",
-			"text": "BRB"
-		},
-		{
-			"keyIndex": 10,
-			"obs": "Full",
-			"text": "Live"
-		},
+        {
+          "keyIndex": 0,
+          "obsCommands": [
+            {
+              "command": "SetCurrentProgramScene",
+              "data": { "sceneName": "BRB" }
+            }
+          ],
+          "text": "BRB"
+        },
+        {
+          "keyIndex": 10,
+          "obsCommands": [
+            {
+              "command": "SetCurrentProgramScene",
+              "data": { "sceneName": "Full" }
+            }
+          ],
+          "text": "Full"
+        },
         {
           "keyIndex": 4,
-          "command": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+          "command": "dms ipc call audio micmute",
           "icon": "/home/gtaluvit/Dropbox/Streamdeck/gnome-sound-recorder.svg",
           "text": "Mute"
         },
@@ -25,7 +35,7 @@
           "keyIndex": 14,
           "icon": "/home/gtaluvit/Dropbox/Streamdeck/yast-sound.svg",
           "text": "Mute",
-          "command": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+          "command": "dms ipc call audio mute"
         }
       ]
     }

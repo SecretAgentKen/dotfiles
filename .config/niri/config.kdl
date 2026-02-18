@@ -36,3 +36,5 @@ include "dms/outputs.kdl"
 include "dms/wpblur.kdl"
 
 include "local/layout.kdl"
+
+include "dms/windowrules.kdl"
