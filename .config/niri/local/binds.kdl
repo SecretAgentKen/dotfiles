@@ -121,6 +121,8 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 
+    Mod+P repeat=false { spawn-sh "wl-mirror $(niri msg --json focused-output | jq -r .name)";  }
+
     Print {
         spawn "dms" "screenshot"
     }  
